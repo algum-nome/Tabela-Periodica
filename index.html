@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Periódica</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Tabela Periódica</h1>
+            <p class="subtitle">Clique em qualquer elemento para ver as informações</p>
+        </header>
+        
+        <div class="search-container">
+            <div class="search-wrapper">
+                <input type="text" id="searchInput" placeholder="Pesquisar (nome, símbolo ou número)">
+                <button id="searchButton" class="search-btn">Buscar</button>
+            </div>
+        </div>
+
+        <div class="table-container">
+            <div class="periodic-table" id="periodicTable">
+            </div>
+        </div>
+
+        <div class="element-details-overlay" id="elementDetailsOverlay">
+            <div class="element-details" id="elementDetails">
+            </div>
+        </div>
+
+        <div class="legend" id="legend">
+            <div class="legend-item">
+                <div class="legend-color legend-metal-alcalino"></div>
+                <span>Metais Alcalinos</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color legend-metal-alcalino-terroso"></div>
+                <span>Metais Alcalino-Terrosos</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color legend-metal-transicao"></div>
+                <span>Metais de Transição</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color legend-metal-pos-transicao"></div>
+                <span>Metais Pós-Transição</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color legend-semimetal"></div>
+                <span>Semimetais</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color legend-nao-metal"></div>
+                <span>Não Metais</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color legend-halogenio"></div>
+                <span>Halogênios</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color legend-gas-nobre"></div>
+                <span>Gases Nobres</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color legend-lantanideo"></div>
+                <span>Lantanídeos</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color legend-actinideo"></div>
+                <span>Actinídeos</span>
+            </div>
+        </div>
+
+        <footer>
+            <p>Igor Pereira Lima e Sarah Gebellini Barella 2°AMS - 2025</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('./service-worker.js');
+  }
+</script>
+</body>
+
+</html>
